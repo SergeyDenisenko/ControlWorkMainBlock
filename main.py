@@ -1,9 +1,7 @@
 # Ввод строки разделенной пробелом
 # разбиение строки на массив строк
-ar = input("Введите строку: ").split()
-# Максимальная допустимая длина строки
-max_char = 3
 
-# Формирование нового массива
-new_arr = [item for item in ar if len(item) <= max_char]
+max_char = 3
+new_arr = [item for item in input("Введите строку: ").split() if len(item) <= max_char]
+
 print(new_arr)
