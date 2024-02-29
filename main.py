@@ -1,7 +1,4 @@
-# Ввод строки разделенной пробелом
-# разбиение строки на массив строк
+def get_array_strings(max_char):
+    return [item for item in input("Введите строку: ").split() if len(item) <= max_char]
 
-max_char = 3
-new_arr = [item for item in input("Введите строку: ").split() if len(item) <= max_char]
-
-print(new_arr)
+print(get_array_strings(3))
